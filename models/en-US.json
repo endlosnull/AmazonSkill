@@ -44,14 +44,6 @@
                     ]
                 },
                 {
-                    "name": "SaveGameIntent",
-                    "slots": [],
-                    "samples": [
-                        "save game",
-                        "save"
-                    ]
-                },
-                {
                     "name": "DecisionIntent",
                     "slots": [
                         {
