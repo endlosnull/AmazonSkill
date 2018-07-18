@@ -1,0 +1,135 @@
+{
+	"uniqueStates": [
+		{
+			"id": 100,
+			"name": "Start",
+			"description": "In the distance, you hear children screaming happily as they play their games. School is out and the Summer heat is slowly building. You grab some tools and start to work. In a whirlwind of sweat, you finish building a fine lemonade stand. Now all that is left is to provide the best lemonade to the thirsty public."
+		},
+		{
+			"id": 101,
+			"name": "Lose",
+			"description": "The sun rises once more, but you look upon your lemonade stand in tatters. There is nothing left to quench the thirsts of passerbys. Perhaps the next Summer will be more merciful. Game over."
+		},
+		{
+			"id": 102,
+			"name": "Win",
+			"description": "As the Summer rolls to a close, you wipe the sweat from your brow and crack a smile. You lift up a glass and take a final sip of the perfect mix of sweetness and sour bite of your lemonade. The memories that were made will never be forgotten. You win."
+		}
+	],
+	"randomStates": [
+		{
+			"id": 0,
+			"name": "Dog",
+			"description": "You hear a loud bark and in the corner of your eye, a flash of a dog charging in your direction. Do you shield your supply of lemons from this possible menace?",
+			"decisions": [
+				{
+					"decision": "no",
+					"description": "The dog crashes into your lemons and cups, becoming trampled and dirty. The dog looks up and sees the gloom in your eyes and instantly feels guilt. The dog slowly walks toward you and gives you a lick. Onlookers are captivated by this display and feel extra generous.",
+					"effects": [
+						"SubMedSupply",
+						"AddLowPopularity",
+						"AddLowMoney"
+					]
+				},
+				{
+					"decision": "yes",
+					"description": "You throw your body onto your lemons and the dog ricochets off with a cloud of dust, leaves, and saliva bursting out. Your lemons are relatively safe but the dog seems a bit hurt and limps away. Some people that saw what had taken place make a disapproving face and walk away.",
+					"effects": [
+						"SubLowSupply",
+						"SubLowPopularity"
+					]
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Wind",
+			"description": "Above your lemonade stand, you see that your banner is blowing in the wind a little more franticly. You feel a sudden gust of wind is surely to come soon. The trees begin to rustle and a few lemons fall from their branches and get caught in the wind coming towards you. Do you try to catch the lemons?",
+			"decisions": [
+				{
+					"decision": "no",
+					"description": "You watch the lemons drift by, but you stay at your stand. A person stumbles from the wind and gets close to your lemonade stand. They look up and appear incredibly thirsty. They purchase multiple cups of lemonade.",
+					"effects": [
+						"SubLowSupply",
+						"AddLowMoney"
+					]
+				},
+				{
+					"decision": "yes",
+					"description": "You quickly jump away from your stand and like a whirlwind pick up the windswept lemons. However you look back at your stand and see a person purviewing your stand but unable to purchase what they sought for. They angrily pull out their phone and tap away. As you try to return to your stand, it is too late. The unsatisfied potential customer had already left.",
+					"effects": [
+						"SubLowPopularity",
+						"AddLowSupply"
+					]
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Stranger",
+			"description": "A stranger suddenly appears at your lemonade stand. They grab a freshly picked lemon from their satchel and place it in front of you. They say that they have many of the sweetest lemons for sale that are sure to produce the best lemonade in the neighborhood. Do you buy the supply of lemons from the stranger?",
+			"decisions": [
+				{
+					"decision": "no",
+					"description": "The stranger scoffs at you and quickly grabs their lemon. The stranger emphasizes what a mistake you have made and walks away, disappearing from the street corner. On the ground nearby, you spot a small coinpurse. You pick it up. Perhaps it was dropped by the mysterious stranger but they are long gone.",
+					"effects": [
+						"AddLowMoney"
+					]
+				},
+				{
+					"decision": "yes",
+					"description": "The stranger smirks at you and pulls out a few more lemons and gives them to you, all while happily grabbing your hard earned money. You place the newly acquired lemons with your other lemons but something seems off. A few of your other lemons as well as the new ones start to turn brown and sickly. You realize you had made a sour deal.",
+					"effects": [
+						"SubLowMoney",
+						"SubLowSupply"
+					]
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Salesperson",
+			"description": "As you are quietly counting your supply, a lemon salesperson arrives at your stand. You are in luck as lemons are in season and the salesperson is willing to sell their lemons for a huge discount. Do you make a deal with the salesperson and purchase their lemons?",
+			"decisions": [
+				{
+					"decision": "no",
+					"description": "You politely refuse the deal. Some people recognize the salesperson as a famous lemon seller and comment on your resolve to say no. Rumors start to circulate about you as the iron willed lemonade stand.",
+					"effects": [
+						"AddHighPopularity"
+					]
+				},
+				{
+					"decision": "yes",
+					"description": "You shake hands with the salesperson and seal the deal. A truck immediately drives by and drops a box of the most yellow lemons you have ever seen. You cannot wait to squeeze these new lemons.",
+					"effects": [
+						"SubLowMoney",
+						"AddMedSupply"
+					]
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Rowdy Customer",
+			"description": "A boisterous person on their phone walks by your stand and eyes your lemonade. They continue to loudly shout and gesture with their phone in hand. They must be parched from all that talking, but you are unsure if they actually want to buy any lemonade. Do you politely ask the person to leave?",
+			"decisions": [
+				{
+					"decision": "no",
+					"description": "You continue to watch this person. Moments pass and eventually they get off their phone and then spend what feels like eternity looking at your lemonade. They finally purchase some and place a generous tip, but it seems like any other potential customers have been annoyed.",
+					"effects": [
+						"AddLowMoney",
+						"SubLowPopularity"
+					]
+				},
+				{
+					"decision": "yes",
+					"description": "After taking a deep breath and counting to ten, you politely ask the customer to leave, pointing to a no loitering sign. The customer gives a stare that feels like daggers. They leave, but not without stealing some lemons from your supply. Someone else who saw what happened tries to step in, but the thief is already gone. The onlooker tries to help out by telling others to come to your establishment.",
+					"effects": [
+						"SubLowSupply",
+						"AddLowPopularity"
+					]
+				}
+			]
+		}
+	]
+}

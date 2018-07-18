@@ -1,0 +1,93 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lemonade stand",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RestartGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "restart",
+                        "new game"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ResumeGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "continue game",
+                        "continue",
+                        "load game",
+                        "load",
+                        "resume game",
+                        "resume"
+                    ]
+                },
+                {
+                    "name": "SaveGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "save game",
+                        "save"
+                    ]
+                },
+                {
+                    "name": "DecisionIntent",
+                    "slots": [
+                        {
+                            "name": "decision",
+                            "type": "decisionType"
+                        }
+                    ],
+                    "samples": [
+                        "{decision}"
+                    ]
+                },
+                {
+                    "name": "StatsIntent",
+                    "slots": [],
+                    "samples": [
+                        "stats"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "decisionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
